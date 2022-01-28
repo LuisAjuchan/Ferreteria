@@ -12,14 +12,20 @@
         Iniciar
       </v-card-subtitle>
       <v-card-subtitle class="pa-1">
-        Empleados<br/> Compras/Ventas
+       Comercializadora Ferreteria Thomas<br/> Sistema de Inventario y Facturación
       </v-card-subtitle>
       <v-text-field hide-details color="red" label="Usuario"></v-text-field>
       <v-text-field color="red" label="contraseña" type="password"></v-text-field>
       <v-card-actions>  
-        <v-btn color="red" dark block rounded >
-          Iniciar
-        </v-btn>
+
+        <v-btn
+            color="red"
+            nuxt
+            dark block rounded
+            to="/modulos"
+          >
+            Iniciar
+          </v-btn>
       </v-card-actions>
         <span class="mt-2 subtitle-2 primary--text" style="cursor:pointer">Olvide Contraseña</span>
     </v-card>

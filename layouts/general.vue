@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app >
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -90,7 +90,7 @@
 
 <script>
 export default {
-  name: 'DefaultLayout',
+  name: 'GeneralLayout',
   data () {
     return {
       clipped: false,
