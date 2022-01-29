@@ -12,7 +12,7 @@
         Iniciar
       </v-card-subtitle>
       <v-card-subtitle class="pa-1">
-       Comercializadora Ferreteria Thomas<br/> Sistema de Inventario y Facturación
+       Comercializadora Ferreteria Thomas<br/> Sistema de Facturación e Inventario
       </v-card-subtitle>
       <v-text-field hide-details color="red" label="Usuario"></v-text-field>
       <v-text-field color="red" label="contraseña" type="password"></v-text-field>

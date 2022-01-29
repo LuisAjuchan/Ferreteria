@@ -7,7 +7,9 @@
           :key="card.title"
           :cols="card.flex"
         >
-          <v-card>
+          <v-card 
+            v-model="selection"
+            active-class="deep-purple accent-4 white--text">
             <v-img
               :src="card.src"
               class="white--text align-end"
@@ -45,14 +47,16 @@ export default Vue.extend({
     layout:'modulos',
   data: () => ({
     cards: [
-      { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 3 },
-      { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 3 },
-      { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
-      { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 3 },
-      { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 3 },
-      { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
-      { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 }
+      { title: 'Compras', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 3 },
+      { title: 'Ventas', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 3 },
+      { title: 'Alquiler', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
+      { title: 'Mantenimiento', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 3 },
+      { title: 'Creditos', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 3 },
+      { title: 'Abonos Anticipados', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 },
+      { title: 'Seguridad', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 3 }
     ],
+     selection: 1,
+    
   }),
 })
 </script>
